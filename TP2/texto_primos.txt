@@ -1,0 +1,22 @@
+STI #0 0
+STI #1 1
+STI #2 0
+STI #3 1
+STI #4 100
+ADDI #2 1
+DIV #4 #2
+STO #5
+BLT #2 #5 6
+ADDI #3 1
+BEQ #3 #4 22
+STI #2 1
+ADDI #2 1
+BEQ #3 #2 19
+REM #3 #2
+STO #6
+BEQ #6 #0 10
+BLT #2 #5 13
+ADDI #3 0
+STOM
+J 10
+DSPM
